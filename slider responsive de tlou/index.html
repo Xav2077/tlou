@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>The Last Of Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <h1>THE LAST OF US</h1>
+    <p>Fondos de pantalla de la franquicia de the last of us</p>
+   
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+            <div class="swiper-slide">
+                <picture>
+                    <source srcset="img/bg(2).jpg" media="(min-width: 800px)">
+                    <img src="img/vertical.jpeg" alt="campo">
+                </picture>    
+            </div>
+
+            <div class="swiper-slide">
+                <picture>
+                    <source srcset="img/bg(5).jpg" media="(min-width: 800px)">
+                    <img src="img/vertical2.jpg" alt="campo">
+                </picture>    
+            </div>
+
+            <div class="swiper-slide">
+                <picture>
+                    <source srcset="img/bg(3).jpg" media="(min-width: 800px)">
+                    <img src="img/vertical3.webp" alt="campo">
+                </picture>    
+            </div>
+
+            <div class="swiper-slide">
+                <picture>
+                    <source srcset="img/bg(4).jpg" media="(min-width: 800px)">
+                    <img src="img/vertical4.jpg" alt="campo">
+                </picture>    
+            </div>
+        </div>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>      
+    </div>
+
+    <div class="icons">
+        <i class="fa-brands fa-facebook"><a href="#"></a></i>
+        <i class="fa-brands fa-twitter"><a href="#"></a></i>
+        <i class="fa-brands fa-instagram"><a href="#"></a></i>
+    </div>
+
+    <!-- java script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        });
+    </script>
+
+</body>
+</html>

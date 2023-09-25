@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Quicksand:wght@400;700&display=swap');
+
+/* font-family: 'Pathway Gothic One', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    background-image: url(img/bg\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+
+}
+h1, p{
+    margin: 30px;
+    text-align: center;
+    color: black;
+}
+h1{
+    margin-bottom: 0;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 3em;
+    letter-spacing: 1px;
+    margin-top: 0;
+    padding-top: 30px;
+}
+p{
+    margin-top: 0;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.swiper{
+    width: 70%;
+    height: 60%;
+    box-shadow: 0 0 15px 0 rgb(0, 0, 0);
+}
+
+
+.swiper-button-prev{
+   backdrop-filter: blur(20px);
+   background-color: rgba(255, 255, 255, 0.178);
+   right:10px;
+   padding: 30px;
+   color: #000 !important;
+   fill: black !important;
+   stroke: black !important;
+}
+
+.swiper-button-next{
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.178);
+    left:10px;
+    padding: 30px;
+    color: #000 !important;
+    fill: black !important;
+    stroke: black !important;
+}
+
+.swiper-pagination{
+    top: 400px !important;
+    transform: translateX(20deg) !important;
+} 
+
+.icons{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding: 30px;
+}
+i{
+    width: 20px;
+    height: 20px;
+    margin: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+    cursor: pointer;
+    padding-top: 3px;
+}
+i:hover{
+    color: black;
+    background-color: white;
+    border-radius: 50px;
+}
+
+picture{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .swiper{
+        background-color: black;
+    }
+
+    .swiper-button-next{
+        padding: 30px;
+        width: 20px;
+        height: 30px;
+        border-radius: 50px;
+        color: white !important;
+        border: solid white 1px;
+    }
+
+    .swiper-button-prev{
+        padding: 30px;
+        width: 20px;
+        height: 30px;
+        border-radius: 50px;
+        color: white !important;
+        border: solid white 1px;
+    }
+
+    i{
+        width: 40px;
+        height: 40px;
+        margin: 20px;
+        padding-left: 2px;
+        padding-right: 2px;
+        cursor: pointer;
+        padding-top: 65px;
+    }
+}
